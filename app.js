@@ -10,3 +10,7 @@ app.use(express.static(publicPath));
 app.listen(3000, () => {
   console.log("Servidor corriendo");
 });
+
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "views/home.html"));
+});
