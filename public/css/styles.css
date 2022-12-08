@@ -1,0 +1,45 @@
+/* p {
+  font-family: "Roboto", sans-serif;
+} */
+.bg-yellow {
+  background: #eac926;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+.font-body {
+  font-family: "Roboto", sans-serif;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15%;
+}
+
+.fa-bars {
+  color: aliceblue;
+  margin: 35%;
+}
+
+p {
+  font-size: 12px;
+}
+
+.headline {
+  font-size: 24px;
+}
