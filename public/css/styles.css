@@ -96,6 +96,11 @@ h3 {
   text-align: center;
 }
 
+.footer-p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .footer-icons {
   font-size: 2em;
   margin-bottom: 10px;
