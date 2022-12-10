@@ -1,6 +1,14 @@
-/* p {
-  font-family: "Roboto", sans-serif;
-} */
+p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/*header*/
+
 .bg-yellow {
   background: #eac926;
 }
@@ -9,12 +17,33 @@
   padding-bottom: 20px;
 }
 
-.font-body {
-  font-family: "Roboto", sans-serif;
+.margin-header {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.img-header {
+  width: 50%;
+  padding-top: 10%;
+}
+
+/* icono de lupa en header*/
+.fa-search {
+  background-color: aliceblue;
+}
+
+.compraEnCuotas {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .list-none {
   list-style: none;
+}
+
+.header ul {
+  margin-top: 10px;
 }
 
 .header ul a {
@@ -36,10 +65,37 @@
   margin: 35%;
 }
 
-p {
-  font-size: 12px;
-}
+/*body*/
 
 .headline {
   font-size: 24px;
+}
+
+.font-body {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-precios {
+  font-size: 18px;
+}
+
+.font-descuentos {
+  font-size: 16px;
+}
+
+.font-descripciones {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/*footer*/
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-icons {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
 }
