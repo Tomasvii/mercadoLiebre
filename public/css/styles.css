@@ -1,93 +1,93 @@
-p {
-  font-size: 12px;
-  margin-bottom: 20px;
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto";
 }
 
-h3 {
-  font-size: 24px;
-}
-
-/*header*/
+/*generales*/
 
 .bg-yellow {
   background: #eac926;
 }
 
-.header {
-  padding-bottom: 20px;
+.p-8px {
+  padding: 8px;
 }
 
-.margin-header {
-  margin-left: 10%;
-  margin-top: 10px;
+.p-topandbottom8px {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.wd-100 {
+  width: 100%;
+}
+
+/*header*/
 
 .img-header {
   width: 50%;
-  padding-top: 10%;
 }
 
-/*barra busqueda*/
-.search {
-  margin-left: 10%;
-}
-
-/* icono de lupa en header*/
 .fa-search {
-  margin-top: -50px;
   background-color: aliceblue;
 }
 
-.compraEnCuotas {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.list-none {
-  list-style: none;
-}
-
-.header ul {
-  margin-top: 10px;
-}
-
-.header ul a {
+.header-list {
   text-decoration: none;
-  color: black;
-}
-
-.burger-menu {
-  background-color: #1259c3;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 15%;
+  color: inherit;
 }
 
 .fa-bars {
-  color: aliceblue;
-  margin: 35%;
+  background-color: #1259c3;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
 }
 
 /*body*/
 
+.main {
+  width: 90vw;
+  margin: auto;
+}
+
 .headline {
   font-size: 24px;
+  color: #666;
 }
 
 .font-body {
   font-family: "Roboto", sans-serif;
 }
 
+.div-productos {
+  border-top: solid 1px #ebebeb;
+  background-color: white;
+  padding: 15px;
+  text-align: start;
+  margin-top: -4px;
+}
+
+.article-producto {
+  margin-top: 10px;
+}
+
+.font-precios {
+  font-size: 18px;
+}
+
 .font-descuentos {
   font-size: 16px;
+  color: #39b54a;
 }
 
 .font-descripciones {
   font-size: 16px;
-  margin-bottom: 10px;
+  display: none;
 }
 
 /*footer*/
@@ -97,12 +97,24 @@ h3 {
 }
 
 .footer-p {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: auto;
+  width: 50%;
 }
 
 .footer-icons {
   font-size: 2em;
   margin-bottom: 10px;
   color: #1259c3;
+}
+
+@media (min-width: 481px) {
+  .font-descripciones {
+    display: contents;
+  }
+  .article-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media (min-width: 769px) {
 }
