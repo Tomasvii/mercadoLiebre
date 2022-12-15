@@ -31,6 +31,8 @@ body {
 .header {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .img-header {
@@ -38,20 +40,22 @@ body {
 }
 
 .search {
-  width: 50%;
   align-self: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+  width: 40%;
 }
 
 .input-search {
-  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  width: 100%;
 }
 
 .search-button {
   background-color: white;
-  border: none;
   padding: 8px;
+  border: none;
 }
 
 .text-header {
@@ -60,11 +64,21 @@ body {
 
 .nav-bar {
   display: none;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
 }
 
 .header-list {
   text-decoration: none;
   color: inherit;
+  font-size: 10px;
 }
 
 .burguer-button {
@@ -86,24 +100,26 @@ body {
   margin: auto;
 }
 
+.main-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+
 .headline {
   font-size: 24px;
   color: #666;
   width: 100%;
-}
 
-.main-section {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.font-body {
-  font-family: "Roboto", sans-serif;
+  margin: auto;
+  display: block;
 }
 
 .article-producto {
   margin-top: 10px;
   width: 100%;
+  background-color: #fff;
 }
 
 .div-productos {
@@ -118,13 +134,13 @@ body {
 
 .precios {
   font-size: 18px;
-  width: 30%;
+  flex-grow: 0.7;
 }
 
 .descuentos {
   font-size: 16px;
   color: #39b54a;
-  width: 70%;
+  flex-grow: 0.3;
   align-self: center;
 }
 
@@ -167,33 +183,45 @@ body {
 }
 
 @media (min-width: 481px) {
-  .descripciones {
-    display: contents;
+  .search {
+    width: 30%;
   }
+
+  .img-header {
+    width: 30%;
+  }
+
+  .text-header {
+    width: 30%;
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .article-producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
   }
-  .nav-bar {
-    display: contents;
+
+  .descripciones {
+    display: inline-block;
+    width: 100%;
   }
+
   .burguer-button {
     display: none;
   }
 }
 
 @media (min-width: 769px) {
+  .article-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 20%;
+  }
 }
-
-/*
-wrap 
-
-cu eleme 
-
-width 
-
-
-margen horiz de 1% para que no sobresalga
-
-o usar gap (genera margen entre dos elementos)
-
-*/
