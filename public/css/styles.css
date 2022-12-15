@@ -28,12 +28,34 @@ body {
 
 /*header*/
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .img-header {
   width: 50%;
 }
 
-.fa-search {
-  background-color: aliceblue;
+.search {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-search {
+  flex-grow: 1;
+}
+
+.search-button {
+  background-color: white;
+  border: none;
+  padding: 8px;
+}
+
+.text-header {
+  width: 100%;
 }
 
 .nav-bar {
@@ -43,6 +65,10 @@ body {
 .header-list {
   text-decoration: none;
   color: inherit;
+}
+
+.burguer-button {
+  width: 100%;
 }
 
 .fa-bars {
@@ -63,34 +89,62 @@ body {
 .headline {
   font-size: 24px;
   color: #666;
+  width: 100%;
+}
+
+.main-section {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .font-body {
   font-family: "Roboto", sans-serif;
 }
 
+.article-producto {
+  margin-top: 10px;
+  width: 100%;
+}
+
 .div-productos {
   border-top: solid 1px #ebebeb;
   background-color: white;
   padding: 15px;
-  text-align: start;
   margin-top: -4px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.article-producto {
-  margin-top: 10px;
-}
-
-.font-precios {
+.precios {
   font-size: 18px;
+  width: 30%;
 }
 
-.font-descuentos {
+.descuentos {
   font-size: 16px;
   color: #39b54a;
+  width: 70%;
+  align-self: center;
 }
 
-.font-descripciones {
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+  flex-wrap: wrap;
+}
+
+.descripciones {
   font-size: 16px;
   display: none;
 }
@@ -113,7 +167,7 @@ body {
 }
 
 @media (min-width: 481px) {
-  .font-descripciones {
+  .descripciones {
     display: contents;
   }
   .article-producto {
@@ -129,3 +183,17 @@ body {
 
 @media (min-width: 769px) {
 }
+
+/*
+wrap 
+
+cu eleme 
+
+width 
+
+
+margen horiz de 1% para que no sobresalga
+
+o usar gap (genera margen entre dos elementos)
+
+*/
