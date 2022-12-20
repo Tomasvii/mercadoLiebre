@@ -236,5 +236,44 @@ body {
 }
 
 .body-form label {
+  padding: 8px 0px;
   width: 100%;
+}
+
+.body-form label h2 {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.body-form input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.body-perfil input {
+  margin: 0px 15px;
+  width: min-content;
+}
+
+.body-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-intereses input {
+  margin-right: 15px;
+  width: min-content;
+}
+
+.body-intereses label {
+  width: 90%;
+}
+
+.body-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0px;
 }
