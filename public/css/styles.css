@@ -225,3 +225,16 @@ body {
     width: 20%;
   }
 }
+
+/* register */
+
+.body-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.body-form label {
+  width: 100%;
+}
