@@ -254,6 +254,10 @@ body {
   .burguer-button {
     display: none;
   }
+
+  .body-form input {
+    max-width: 50%;
+  }
 }
 
 /* desktop */
@@ -285,6 +289,10 @@ body {
 
   .footer-p {
     width: 100%;
+  }
+
+  .body-form input {
+    max-width: 30%;
   }
 }
 
