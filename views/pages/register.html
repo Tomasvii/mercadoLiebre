@@ -25,14 +25,14 @@
           <img src="/images/logo-mercado-liebre.svg" alt="Mercado liebre" />
         </a>
       </h1>
-      <div class="search">
+      <form class="search">
         <input
           class="input-search"
           type="search"
           placeholder="Buscar productos, marcas"
         />
         <button class="search-button"><i class="fas fa-search"></i></button>
-      </div>
+      </form>
       <p class="text-center text-header">
         <i class="fas fa-user"></i>Comprá en cuotas y sin tarjeta de crédito
       </p>
@@ -69,16 +69,30 @@
       <div class="form-div">
         <form action="" method="post" class="body-form">
           <label for="nombre"><h2>Nombre y apellido:</h2></label>
-          <input type="text" name="nombre" />
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Introduce tu nombre y apellido"
+            required
+          />
           <label for="nombre"><h2>Nombre de usuario:</h2></label>
-          <input type="text" name="usuario" />
+          <input
+            type="text"
+            name="usuario"
+            placeholder="Introduce tu nombre de usuario"
+            required
+          />
           <label for="nombre"><h2>Fecha de nacimiento:</h2></label>
-          <input type="date" name="nacimiento" />
+          <input type="date" name="nacimiento" required />
           <label for="nombre"><h2>Domicilio:</h2></label>
-          <input type="text" name="domicilio" />
+          <input
+            type="text"
+            name="domicilio"
+            placeholder="Introduce tu domicilio"
+          />
           <label for="perfil"><h2>Perfil de usuario:</h2></label>
           <div class="body-perfil">
-            <input type="radio" name="perfil" value="comprar" />
+            <input type="radio" name="perfil" value="comprar" checked />
             <label for="perfil">Comprador</label>
             <input type="radio" name="perfil" value="vender" />
             <label for="perfil">Vendedor</label>
@@ -99,9 +113,19 @@
           <label for="foto"><h2>Foto de usuario:</h2></label>
           <input type="file" name="foto" />
           <label for="password"><h2>Contraseña:</h2></label>
-          <input type="password" name="password" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Introduce tu contraseña"
+            required
+          />
           <label for="confirm"><h2>Confirmar contraseña:</h2></label>
-          <input type="password" name="confirm" />
+          <input
+            type="password"
+            name="confirm"
+            placeholder="Repite tu contraseña"
+            required
+          />
           <div class="body-buttons">
             <button class="body-button" type="submit">Enviar</button>
             <button class="body-button" type="reset">Borrar</button>

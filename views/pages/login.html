@@ -25,14 +25,14 @@
           <img src="/images/logo-mercado-liebre.svg" alt="Mercado liebre" />
         </a>
       </h1>
-      <div class="search">
+      <form class="search">
         <input
           class="input-search"
           type="search"
           placeholder="Buscar productos, marcas"
         />
         <button class="search-button"><i class="fas fa-search"></i></button>
-      </div>
+      </form>
       <p class="text-center text-header">
         <i class="fas fa-user"></i>Comprá en cuotas y sin tarjeta de crédito
       </p>
@@ -69,9 +69,19 @@
       <div class="form-div">
         <form action="" method="post" class="body-form">
           <label for="nombre"><h2>Nombre de usuario:</h2></label>
-          <input type="text" name="usuario" />
+          <input
+            type="text"
+            name="usuario"
+            placeholder="Introduce tu usuario"
+            required
+          />
           <label for="password"><h2>Contraseña:</h2></label>
-          <input type="password" name="password" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Introduce tu contraseña"
+            required
+          />
           <div class="body-buttons">
             <button class="body-button" type="submit" class="submit-button">
               Enviar
