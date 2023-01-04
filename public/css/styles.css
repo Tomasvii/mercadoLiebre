@@ -1,9 +1,8 @@
 body {
   background-color: #ebebeb;
-  font-family: "Roboto";
 }
 
-/*generales*/
+/* Generales */
 
 .bg-yellow {
   background: #eac926;
@@ -26,7 +25,7 @@ body {
   width: 100%;
 }
 
-/*header*/
+/* Header*/
 
 .header {
   display: flex;
@@ -169,6 +168,11 @@ body {
 
 .footer-section {
   text-align: center;
+  margin-top: 15px;
+}
+
+.footer-h4 {
+  font-size: 18px;
 }
 
 .footer-p {
@@ -186,6 +190,74 @@ body {
 .copyright {
   text-align: center;
   padding-bottom: 8px;
+}
+
+/* register */
+
+.body-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 8px;
+  width: 90vw;
+}
+
+.body-form label {
+  padding: 8px 0px;
+  width: 100vw;
+}
+
+.body-form label h2 {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.body-form input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.body-perfil input {
+  margin: 0px 15px;
+  width: min-content;
+}
+
+.body-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-intereses input {
+  margin-right: 15px;
+  width: min-content;
+}
+
+.body-intereses label {
+  width: 90%;
+}
+
+.body-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 30px 0px;
+}
+
+.body-button {
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #1259c3;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* log in */
+
+.submit-button {
+  transition: all, 0.3s;
 }
 
 /* laptop */
@@ -258,18 +330,37 @@ body {
   .body-form input {
     max-width: 50%;
   }
+
+  .body-button {
+    width: 25%;
+  }
 }
 
 /* desktop */
 
 @media (min-width: 769px) {
+  .text-header {
+    font-size: 15px;
+  }
+
+  .header-list {
+    font-size: 15px;
+  }
+
   .article-producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 20%;
   }
 
-  .submit-button:hover {
-    background-color: #0022aa;
+  .body-button:hover {
+    transition: all 0.5s;
+    color: #eac926;
+  }
+
+  .body-button:active {
+    transition: all 0.5s;
+    color: #1259c3;
+    background-color: #eac926;
   }
 
   .footer-section {
@@ -294,62 +385,4 @@ body {
   .body-form input {
     max-width: 30%;
   }
-}
-
-/* register */
-
-.body-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  padding: 8px;
-}
-
-.body-form label {
-  padding: 8px 0px;
-  width: 100%;
-}
-
-.body-form label h2 {
-  font-size: 16px;
-  margin-top: 16px;
-}
-
-.body-form input {
-  border: none;
-  padding: 5px;
-  width: 100%;
-}
-
-.body-perfil input {
-  margin: 0px 15px;
-  width: min-content;
-}
-
-.body-intereses {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.body-intereses input {
-  margin-right: 15px;
-  width: min-content;
-}
-
-.body-intereses label {
-  width: 90%;
-}
-
-.body-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 0px;
-}
-
-/* log in */
-
-.submit-button {
-  transition: all, 0.3s;
 }
